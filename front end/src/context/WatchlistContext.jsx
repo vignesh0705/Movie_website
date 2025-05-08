@@ -17,9 +17,9 @@ export const WatchlistProvider = ({ children }) => {
     
     if (!isInWatchlist) {
       setWatchlist([...watchlist, movie]);
-      return true; // Added successfully
+      return true; 
     }
-    return false; // Already in watchlist
+    return false; 
   };
 
   const removeFromWatchlist = (movieId) => {
@@ -45,3 +45,5 @@ export const useWatchlist = () => {
   }
   return context;
 };
+
+export const useWatchlistContext = () =>useWatchlistContext(WatchlistContext);

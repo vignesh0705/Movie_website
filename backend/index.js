@@ -75,5 +75,3 @@ app.post("/removeFromWatchlist", async (req, res) => {
         res.status(201).json({message:false});
     }
 });
-
-
